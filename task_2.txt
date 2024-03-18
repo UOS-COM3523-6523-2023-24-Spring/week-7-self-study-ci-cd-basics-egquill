@@ -1,0 +1,8 @@
+Model-based testing that can capture the uncertainty or variability of the system behaviour.
+
+Alternatively, test using data that reflects the non-deterministic behaviour of the system, such as historical data,
+online data, or synthetic data. Can help observe how the system behaves in realistic situations.
+
+Maintaining other good practices: keep tests isolated from each other so that execution of one test does not affect
+any others, never use bare sleeps to wait for asynchronous responses and instead use callback or polling, and place
+non-deterministic tests in a 'quarantine' area.
